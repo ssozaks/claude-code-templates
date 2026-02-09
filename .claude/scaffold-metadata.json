@@ -1,0 +1,49 @@
+{
+  "scaffoldDate": "2026-02-09",
+  "scaffoldVersion": "1.0.0",
+  "preset": "nodejs-cli",
+  "projectName": "claude-code-templates",
+  "projectDisplayName": "Claude Code Templates",
+  "scaffoldedBy": "webreka-system/init-project",
+  "components": {
+    "claudeMd": true,
+    "rules": [
+      "coding-standards.md",
+      "security.md",
+      "agent-teams.md",
+      "language.md",
+      "turkish-characters.md",
+      "openspec-workflow.md",
+      "ralph-wiggum.md"
+    ],
+    "commands": [
+      "lint.md",
+      "test.md",
+      "dev.md",
+      "deploy.md",
+      "db-migrate.md",
+      "ralph-loop.md",
+      "cancel-ralph.md",
+      "ralph-help.md"
+    ],
+    "hooks": [
+      "pre-tool-use.sh",
+      "post-tool-use.sh",
+      "stop-quality-check.sh",
+      "task-completed.sh",
+      "teammate-idle.sh"
+    ],
+    "context": [
+      "design-principles.md",
+      "design-review-claude-md-snippet.md",
+      "design-review-slash-command.md",
+      "layout-principles.md",
+      "naming-principles.md"
+    ],
+    "agents": 6,
+    "editorconfig": true,
+    "gitattributes": true,
+    "settingsLocal": true,
+    "currentTask": true
+  }
+}

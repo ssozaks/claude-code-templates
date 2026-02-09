@@ -1,6 +1,84 @@
-# CLAUDE.md
+# Claude Code Templates
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+> Bu dosya Claude Code tarafindan her oturumda otomatik okunur.
+> Scaffold tarihi: 2026-02-09 | Preset: nodejs-cli
+
+<!-- SCAFFOLD:identity:START -->
+## Proje Kimligi
+- **Proje:** Claude Code Templates
+- **Slug:** claude-code-templates
+- **Aciklama:** Node.js CLI tool for Claude Code configurations and real-time analytics
+- **Dizin:** ~/projects/claude-code-templates/
+<!-- SCAFFOLD:identity:END -->
+
+<!-- SCAFFOLD:tech-stack:START -->
+## Teknoloji Stack
+### Core
+- Node.js (v14.0.0+) + CommonJS
+- Express.js + WebSocket (ws)
+- Jest (testing framework)
+- Vercel (deployment)
+<!-- SCAFFOLD:tech-stack:END -->
+
+<!-- SCAFFOLD:commands:START -->
+## Claude Code Komutlari
+- `/dev` - Gelistirme ortamini baslat
+- `/test` - Test suite calistir
+- `/deploy` - Deploy et
+- `/lint` - Lint calistir
+- `/ralph-loop` - Ralph Wiggum otonom dongusu baslat
+- `/cancel-ralph` - Ralph dongusunu iptal et
+- `/ralph-help` - Ralph Wiggum teknik yardim
+<!-- SCAFFOLD:commands:END -->
+
+<!-- SCAFFOLD:standards:START -->
+## Kodlama Standartlari
+- **Isimlendirme:** PascalCase (classes), camelCase (functions/variables), UPPER_SNAKE_CASE (constants)
+- **API Response:** camelCase (JSON)
+- **Git Commit:** Conventional Commits (feat/fix/refactor/docs) - Ingilizce
+- **Kod Dili:** Ingilizce (degisken, fonksiyon, class, yorum)
+<!-- SCAFFOLD:standards:END -->
+
+<!-- SCAFFOLD:security:START -->
+## Guvenlik
+- Hassas bilgileri (API key, sifre, token) ASLA koda yazma
+- .env dosyalarini ASLA commit etme
+- .env.example sadece placeholder deger icerir
+<!-- SCAFFOLD:security:END -->
+
+<!-- SCAFFOLD:agent-teams:START -->
+## Agent Teams Sablonlari
+
+### Feature Team (3-4 teammate)
+- CLI teammate: CLI tool logic, component installation
+- API teammate: Vercel serverless functions, database
+- Test teammate: Unit tests, integration tests, E2E
+- Delegate mode. Plan approval zorunlu.
+
+### Code Review Team (3 teammate)
+- Security reviewer: OWASP, auth, injection
+- Performance reviewer: Query optimization, cache, bundle size
+- Quality reviewer: Test coverage, standards, maintainability
+<!-- SCAFFOLD:agent-teams:END -->
+
+<!-- SCAFFOLD:rules:START -->
+## Detayli Kurallar
+
+@.claude/rules/coding-standards.md
+@.claude/rules/security.md
+@.claude/rules/agent-teams.md
+@.claude/rules/language.md
+@.claude/rules/turkish-characters.md
+@.claude/rules/openspec-workflow.md
+@.claude/rules/ralph-wiggum.md
+<!-- SCAFFOLD:rules:END -->
+
+<!-- SCAFFOLD:current-task:START -->
+## Aktif Gorev
+@.claude/current-task.md
+<!-- SCAFFOLD:current-task:END -->
+
+---
 
 ## Project Overview
 
