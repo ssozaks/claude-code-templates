@@ -17,7 +17,8 @@
     "backend": true,
     "docker": false,
     "api": true,
-    "vercel": true
+    "vercel": true,
+    "test-coverage": { "enabled": true, "installedAt": "2026-02-13" }
   },
   "techStack": {
     "runtime": "nodejs",

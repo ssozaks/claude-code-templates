@@ -2,17 +2,36 @@
   "mcpServers": {
     "playwright": {
       "command": "npx",
-      "args": ["@playwright/mcp@latest"]
+      "args": [
+        "@playwright/mcp@latest"
+      ]
     },
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ]
     },
     "memory": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
       "env": {
         "MEMORY_FILE_PATH": "/home/aiserverwebreka/.claude/memory.jsonl"
+      }
+    },
+    "gdrive": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-gdrive"
+      ],
+      "env": {
+        "GDRIVE_OAUTH_PATH": "/home/aiserverwebreka/.config/google/gcp-oauth.keys.json",
+        "GDRIVE_CREDENTIALS_PATH": "/home/aiserverwebreka/.config/google/gdrive-credentials.json"
       }
     }
   }

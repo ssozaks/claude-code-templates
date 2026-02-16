@@ -1,0 +1,35 @@
+schema: spec-driven
+
+context: |
+  Project: Claude Code Templates (aitmpl.com)
+  Description: Node.js CLI tool and web platform for Claude Code configurations,
+    component management, real-time analytics, and community ecosystem.
+  Tech stack:
+    - Runtime: Node.js 14+ (CommonJS)
+    - Backend: Express.js, WebSocket (ws), Chokidar
+    - Frontend: Vanilla JavaScript (no framework), Chart.js, CSS3
+    - CLI: Commander, Inquirer, Ora, Chalk, Boxen
+    - Databases: Supabase (download tracking), Neon PostgreSQL (version monitoring, command usage)
+    - Deployment: Vercel (serverless functions + static site)
+    - Testing: Jest (unit/integration), Playwright (E2E)
+    - CI/CD: GitHub Actions (publish, security audit, data updates)
+    - Integrations: Discord bot, NPM registry monitoring, GitHub API
+  Domain: Developer tools / AI coding assistant ecosystem
+  Conventions:
+    - Conventional Commits (feat/fix/refactor/docs) in English
+    - PascalCase for classes, camelCase for functions/variables, UPPER_SNAKE_CASE for constants
+    - camelCase for JSON API responses
+    - ES Modules for API endpoints, CommonJS for CLI tool
+
+rules:
+  proposal:
+    - Keep proposals under 500 words
+    - Always include a "Non-goals" section
+    - Reference affected spec categories
+  tasks:
+    - Break tasks into chunks of max 2 hours
+    - Each task must reference a REQ-XX-NNN requirement
+  specs:
+    - Every requirement must have at least one WHEN/THEN scenario
+    - Reference source files for implemented requirements
+    - Use SHALL or MUST keywords in all requirements
