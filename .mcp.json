@@ -3,21 +3,21 @@
     "playwright": {
       "command": "npx",
       "args": [
-        "@playwright/mcp@latest"
+        "@playwright/mcp@0.0.68"
       ]
     },
     "context7": {
       "command": "npx",
       "args": [
         "-y",
-        "@upstash/context7-mcp@latest"
+        "@upstash/context7-mcp@2.1.1"
       ]
     },
     "memory": {
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-memory"
+        "@modelcontextprotocol/server-memory@2026.1.26"
       ],
       "env": {
         "MEMORY_FILE_PATH": "/home/aiserverwebreka/.claude/memory.jsonl"
@@ -27,7 +27,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-gdrive"
+        "@modelcontextprotocol/server-gdrive@2025.1.14"
       ],
       "env": {
         "GDRIVE_OAUTH_PATH": "/home/aiserverwebreka/.config/google/gcp-oauth.keys.json",
