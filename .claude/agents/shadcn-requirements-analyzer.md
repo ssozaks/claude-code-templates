@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/agents/shadcn-requirements-analyzer.md

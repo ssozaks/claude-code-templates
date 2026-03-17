@@ -1,1 +1,0 @@
-/home/aiserverwebreka/webreka-system/shared/context/design-review-slash-command.md

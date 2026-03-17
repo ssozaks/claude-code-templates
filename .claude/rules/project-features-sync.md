@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/rules/base/project-features-sync.md

@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/rules/base/scope-guard.md

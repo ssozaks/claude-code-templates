@@ -1,1 +1,0 @@
-/home/aiserverwebreka/webreka-system/shared/context/design-review-claude-md-snippet.md

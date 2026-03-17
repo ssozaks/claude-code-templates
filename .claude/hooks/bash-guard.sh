@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/bash-guard.sh

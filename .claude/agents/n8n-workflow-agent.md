@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/agents/n8n-workflow-agent.md

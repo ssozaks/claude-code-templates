@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/agents/shadcn-quick-helper.md

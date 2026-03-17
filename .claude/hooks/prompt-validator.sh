@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/prompt-validator.sh

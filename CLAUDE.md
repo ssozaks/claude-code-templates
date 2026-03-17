@@ -1,14 +1,14 @@
 # Claude Code Templates
 
-> Bu dosya Claude Code tarafindan her oturumda otomatik okunur.
+> Bu dosya Claude Code tarafından her oturumda otomatik okunur.
 > Scaffold tarihi: 2026-02-09 | Preset: nodejs-cli
 
 <!-- SCAFFOLD:identity:START -->
-## Proje Kimligi
+## Proje Kimliği
 - **Proje:** Claude Code Templates
 - **Slug:** claude-code-templates
-- **Aciklama:** Node.js CLI tool for Claude Code configurations and real-time analytics
-- **Dizin:** ~/projects/claude-code-templates/
+- **Açıklama:** Node.js CLI tool for Claude Code configurations and real-time analytics
+- **Dizin:** ~/projects/templates/claude-code-templates/
 <!-- SCAFFOLD:identity:END -->
 
 <!-- SCAFFOLD:tech-stack:START -->
@@ -21,33 +21,33 @@
 <!-- SCAFFOLD:tech-stack:END -->
 
 <!-- SCAFFOLD:commands:START -->
-## Claude Code Komutlari
-- `/dev` - Gelistirme ortamini baslat
-- `/test` - Test suite calistir
+## Claude Code Komutları
+- `/dev` - Geliştirme ortamını başlat
+- `/test` - Test suite çalıştır
 - `/deploy` - Deploy et
-- `/lint` - Lint calistir
-- `/ralph-loop` - Ralph Wiggum otonom dongusu baslat
-- `/cancel-ralph` - Ralph dongusunu iptal et
-- `/ralph-help` - Ralph Wiggum teknik yardim
+- `/lint` - Lint çalıştır
+- `/ralph-loop` - Ralph Wiggum otonom döngüsü başlat
+- `/cancel-ralph` - Ralph döngüsünü iptal et
+- `/ralph-help` - Ralph Wiggum teknik yardım
 <!-- SCAFFOLD:commands:END -->
 
 <!-- SCAFFOLD:standards:START -->
-## Kodlama Standartlari
-- **Isimlendirme:** PascalCase (classes), camelCase (functions/variables), UPPER_SNAKE_CASE (constants)
+## Kodlama Standartları
+- **İsimlendirme:** PascalCase (classes), camelCase (functions/variables), UPPER_SNAKE_CASE (constants)
 - **API Response:** camelCase (JSON)
-- **Git Commit:** Conventional Commits (feat/fix/refactor/docs) - Ingilizce
-- **Kod Dili:** Ingilizce (degisken, fonksiyon, class, yorum)
+- **Git Commit:** Conventional Commits (feat/fix/refactor/docs) - İngilizce
+- **Kod Dili:** İngilizce (değişken, fonksiyon, class, yorum)
 <!-- SCAFFOLD:standards:END -->
 
 <!-- SCAFFOLD:security:START -->
-## Guvenlik
-- Hassas bilgileri (API key, sifre, token) ASLA koda yazma
-- .env dosyalarini ASLA commit etme
-- .env.example sadece placeholder deger icerir
+## Güvenlik
+- Hassas bilgileri (API key, şifre, token) ASLA koda yazma
+- .env dosyalarını ASLA commit etme
+- .env.example sadece placeholder değer içerir
 <!-- SCAFFOLD:security:END -->
 
 <!-- SCAFFOLD:agent-teams:START -->
-## Agent Teams Sablonlari
+## Agent Teams Şablonları
 
 ### Feature Team (3-4 teammate)
 - CLI teammate: CLI tool logic, component installation
@@ -62,7 +62,7 @@
 <!-- SCAFFOLD:agent-teams:END -->
 
 <!-- SCAFFOLD:rules:START -->
-## Detayli Kurallar
+## Detaylı Kurallar
 
 @.claude/rules/coding-standards.md
 @.claude/rules/security.md
@@ -74,7 +74,7 @@
 <!-- SCAFFOLD:rules:END -->
 
 <!-- SCAFFOLD:current-task:START -->
-## Aktif Gorev
+## Aktif Görev
 @.claude/current-task.md
 <!-- SCAFFOLD:current-task:END -->
 

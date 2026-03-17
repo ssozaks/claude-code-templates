@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/commands/test-react-component.md

@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/agents/wordpress-elementor-agent.md
