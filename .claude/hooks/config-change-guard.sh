@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/config-change-guard.sh

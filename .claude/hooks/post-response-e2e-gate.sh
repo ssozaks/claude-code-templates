@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/post-response-e2e-gate.sh

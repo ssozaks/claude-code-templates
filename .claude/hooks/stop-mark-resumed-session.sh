@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/stop-mark-resumed-session.sh

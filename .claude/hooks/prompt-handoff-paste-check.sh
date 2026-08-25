@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/prompt-handoff-paste-check.sh

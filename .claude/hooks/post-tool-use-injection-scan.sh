@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/post-tool-use-injection-scan.sh

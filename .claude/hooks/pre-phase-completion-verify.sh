@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/pre-phase-completion-verify.sh

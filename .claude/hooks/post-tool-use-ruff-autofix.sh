@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/post-tool-use-ruff-autofix.sh

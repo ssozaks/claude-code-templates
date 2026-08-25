@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/post-response-solution-quality-gate.sh

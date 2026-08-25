@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/quality-pressure-monitor.sh

@@ -1,0 +1,1 @@
+/home/aiserverwebreka/webreka-system/shared/hooks/chain-regression-check.sh

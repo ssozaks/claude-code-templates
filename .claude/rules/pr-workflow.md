@@ -1,1 +1,0 @@
-/home/aiserverwebreka/webreka-system/shared/rules/base/pr-workflow.md
