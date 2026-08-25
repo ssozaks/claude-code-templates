@@ -54,3 +54,8 @@ test-cloudflare/
 
 # Deployment
 .vercel
+
+# WEBREKA Claude state (state-management.md Tier 1 — ephemeral)
+.claude/snapshots/
+.claude-cascade.json
+**/.claude-cascade.json
