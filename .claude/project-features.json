@@ -3,7 +3,6 @@
   "scaffoldVersion": "1.0.0",
   "features": {
     "openspec": true,
-    "ralphWiggum": true,
     "agentTeams": true,
     "hooks": {
       "preToolUse": true,

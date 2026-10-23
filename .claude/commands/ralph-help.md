@@ -1,1 +1,0 @@
-/home/aiserverwebreka/webreka-system/shared/commands/ralph-help.md
