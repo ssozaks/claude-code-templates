@@ -26,9 +26,6 @@
 - `/test` - Test suite çalıştır
 - `/deploy` - Deploy et
 - `/lint` - Lint çalıştır
-- `/ralph-loop` - Ralph Wiggum otonom döngüsü başlat
-- `/cancel-ralph` - Ralph döngüsünü iptal et
-- `/ralph-help` - Ralph Wiggum teknik yardım
 <!-- SCAFFOLD:commands:END -->
 
 <!-- SCAFFOLD:standards:START -->
@@ -70,7 +67,6 @@
 @.claude/rules/language.md
 @.claude/rules/turkish-characters.md
 @.claude/rules/openspec-workflow.md
-@.claude/rules/ralph-wiggum.md
 <!-- SCAFFOLD:rules:END -->
 
 <!-- SCAFFOLD:current-task:START -->
