@@ -43,4 +43,4 @@ jobs:
             4. Performance (N+1 queries, unnecessary re-renders, bundle size)
             5. Missing error handling
             Rate severity: CRITICAL, HIGH, MEDIUM, LOW.
-          claude_args: "--model claude-sonnet-4-6 --max-turns 5"
+          claude_args: "--model claude-sonnet-5-5 --max-turns 5"
