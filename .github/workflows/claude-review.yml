@@ -1,15 +1,5 @@
 name: Claude Code Review
 
-# Thin caller — delegates to the WEBREKA-shared reusable review workflow in
-# ssozaks/webreka-system (a single review definition for every WEBREKA repo).
-# Auth: CLAUDE_CODE_OAUTH_TOKEN repo secret (Claude Max subscription, zero
-# per-call cost). Set it once per repo: `gh secret set CLAUDE_CODE_OAUTH_TOKEN`.
-#
-# Runner: defaults to GitHub-hosted (free within the monthly Actions quota).
-# Once this repo has an ONLINE WEBREKA self-hosted runner, switch to keep it
-# off the metered minutes entirely:
-#     runner: '["self-hosted","webreka"]'
-
 on:
   pull_request:
     types: [opened, synchronize]
@@ -35,8 +25,22 @@ jobs:
       (github.event_name == 'pull_request' && github.event.pull_request.draft == false) ||
       (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
       (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude'))
-    uses: ssozaks/webreka-system/.github/workflows/_claude-review-reusable.yml@main
-    secrets: inherit
-    with:
-      runner: '["ubuntu-latest"]'
-      max_turns: 20
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Review this PR for:
+            1. Logic errors and bugs
+            2. Security vulnerabilities (OWASP Top 10)
+            3. Turkish character handling (toLocaleUpperCase/toLowerCase with 'tr')
+            4. Performance (N+1 queries, unnecessary re-renders, bundle size)
+            5. Missing error handling
+            Rate severity: CRITICAL, HIGH, MEDIUM, LOW.
+          claude_args: "--model claude-sonnet-5-5 --max-turns 5"
