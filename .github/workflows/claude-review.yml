@@ -44,7 +44,12 @@ jobs:
             find .claude -type l ! -exec test -e {} \; -print -delete || true
           fi
 
-      - uses: anthropics/claude-code-action@v1
+      # Pinned to the SHA the shared reusable workflow uses. The floating v1
+      # (16f9f71a on 2026-10-24) restores .claude/ from the base branch with a
+      # placeholder for every link to /home/aiserverwebreka/webreka-system
+      # (175 here, hooks.json and every hook included), and any PR touching
+      # .claude/ then ends in ~2 s with result is_error:true (#1, probe #3).
+      - uses: anthropics/claude-code-action@536f2c32a39763739000b0e1ac69ca2647d97ce9 # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
