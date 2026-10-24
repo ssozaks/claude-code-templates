@@ -1,1 +1,0 @@
-/home/aiserverwebreka/webreka-system/shared/hooks/session-start-topic-claim.sh
