@@ -32,6 +32,18 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Strip broken local symlinks
+        # Same step as ssozaks/webreka-system _claude-review-reusable.yml: the
+        # tracked .claude/ links point to /home/aiserverwebreka/webreka-system/...,
+        # which does not exist on a GitHub runner. When a PR touches .claude/,
+        # the action restores it from the base branch and leaves placeholders
+        # for those links (hooks included); the run then ends in ~2 s with
+        # result is_error:true. Delete the broken links before the action runs.
+        run: |
+          if [ -d .claude ]; then
+            find .claude -type l ! -exec test -e {} \; -print -delete || true
+          fi
+
       - uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
