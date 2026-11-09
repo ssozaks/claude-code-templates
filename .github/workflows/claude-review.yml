@@ -60,4 +60,6 @@ jobs:
             4. Performance (N+1 queries, unnecessary re-renders, bundle size)
             5. Missing error handling
             Rate severity: CRITICAL, HIGH, MEDIUM, LOW.
-          claude_args: "--model claude-sonnet-5-5 --max-turns 5"
+          # 5 turns ran out on every PR (#7, #8: "Reached maximum number of turns (5)").
+          # Same budget as the shared reusable workflow: 60, or 150 above 20 files.
+          claude_args: "--model claude-sonnet-5-5 --max-turns ${{ (github.event.pull_request.changed_files || 0) > 20 && 150 || 60 }}"
