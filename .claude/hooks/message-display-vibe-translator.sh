@@ -1,1 +1,0 @@
-/home/aiserverwebreka/webreka-system/shared/hooks/message-display-vibe-translator.sh

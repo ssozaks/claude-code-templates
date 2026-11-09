@@ -1,1 +1,0 @@
-/home/aiserverwebreka/webreka-system/shared/hooks/pre-tool-use-shared-checkout-git-guard.sh
